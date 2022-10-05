@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Etch a Sketch</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="title"><h1>Sketch Your Fantasy</h1></div>
+      <div class="content">
+        <div class="sketchpad"></div>
+        <div class="button">
+          <button onclick="changeColor('Red')">Red</button>
+          <button onclick="changeColor('Purple')">Purple</button>
+          <button onclick="changeColor('Cyan')">Cyan</button>
+          <button onclick="changeColor('Pink')">Pink</button>
+          <button onclick="changeColor('White')">Eraser</button>
+          <button onclick="resetBoard()">Reset</button>
+        </div>
+        <div class="input">
+          <input
+            type="text"
+            placeholder="Size of the board"
+            value="64"
+            onchange="changeSize(this.value)"
+          />
+          <button>Set Size</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
